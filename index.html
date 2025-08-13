@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Day Planner</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🗓️ Day Planner</h1>
+    <p id="current-date"></p>
+
+    <!-- Time Selector -->
+    <div class="time-selector">
+      <label for="start-time">Start Time:</label>
+      <input type="time" id="start-time" value="09:00">
+      <label for="end-time">End Time:</label>
+      <input type="time" id="end-time" value="17:00">
+      <button id="generate">➕ Generate Time Blocks</button>
+    </div>
+    <div class="theme-toggle">
+  <label class="switch">
+    <input type="checkbox" id="themeToggle">
+    <span class="slider round"></span>
+  </label>
+  <span id="themeLabel">Light Mode</span>
+</div>
+    <button id="clearAll">🧹 Clear All Tasks</button>
+    <div id="planner"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
